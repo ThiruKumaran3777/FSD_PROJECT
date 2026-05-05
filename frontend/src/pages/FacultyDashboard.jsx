@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 import { useAuth } from '../auth/AuthContext';
 
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api';
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5001';
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://fsd-project-81bb.onrender.com';
 
 const socket = io(SOCKET_URL, {
   withCredentials: true,
