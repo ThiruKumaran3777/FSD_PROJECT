@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useAuth } from '../auth/AuthContext';
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://fsd-project-81bb.onrender.com';
 
 const MOCK_COURSES = [
     { _id: '1', code: 'CS101', title: 'Intro to Computer Science', instructor: 'Prof. Smith', videoUrl: 'https://www.youtube.com/watch?v=zOjov-2OZ0E', thumbnail: 'https://img.youtube.com/vi/zOjov-2OZ0E/hqdefault.jpg' },
