@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-black antialiased;
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-black text-white rounded-2xl p-6 transition-all duration-300 hover:bg-gray-900;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-xl font-bold hover:bg-gray-800 transition-colors;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center bg-white text-black rounded-xl font-bold hover:bg-gray-100 transition-all;
+  }
+
+  .input-premium {
+    @apply w-full px-4 py-3 bg-gray-100 text-black rounded-xl focus:outline-none focus:ring-2 focus:ring-black transition-colors;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 rounded-lg font-bold transition-colors hover:bg-gray-100;
+  }
+
+  .nav-link.active {
+    @apply bg-black text-white;
+  }
+
+  .glass {
+    @apply bg-white/80 backdrop-blur-md;
+  }
+}
