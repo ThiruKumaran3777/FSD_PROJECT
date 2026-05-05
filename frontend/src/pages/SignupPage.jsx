@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../auth/AuthContext';
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://fsd-project-81bb.onrender.com';
 
 const roles = ['Student', 'Faculty'];
 
