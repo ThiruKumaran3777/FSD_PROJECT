@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const AuthContext = createContext(null);
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://fsd-project-81bb.onrender.com';
 const TOKEN_KEY = 'auth_token';
 const USER_KEY = 'auth_user';
 
